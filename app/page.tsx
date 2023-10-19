@@ -1,13 +1,5 @@
 "use client";
-import {
-  HiArrowSmRight,
-  HiChartPie,
-  HiInbox,
-  HiShoppingBag,
-  HiTable,
-  HiUser,
-  HiViewBoards,
-} from "react-icons/hi";
+import { HiChartPie } from "react-icons/hi";
 import { FunctionComponent } from "react";
 import { Sidebar } from "flowbite-react";
 
@@ -17,7 +9,7 @@ const HomeRoute: FunctionComponent = () => {
       <Sidebar className="min-h-screen" color="">
         <Sidebar.Items className="min-h-screen">
           <Sidebar.ItemGroup>
-            <Sidebar.Item href="/">
+            <Sidebar.Item href="/view-shifts">
               <h1>Sead</h1>
             </Sidebar.Item>
             <Sidebar.Item href="/book-a-shift" icon={HiChartPie}>

@@ -9,6 +9,13 @@ const config: Config = {
     "./public/**/*.html",
   ],
   theme: {
+    colors: {
+      cyan: "#D9FDFF",
+      oxford: "#0A122A",
+      asparagus: "#698F3F",
+      bole: "#804E49",
+      apricot: "#F7C4A5",
+    },
     extend: {},
   },
   plugins: [require("flowbite/plugin")],
