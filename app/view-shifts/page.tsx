@@ -13,11 +13,11 @@ const client = new MongoClient(uri!, {
 
 export const getWorkerTypes = async () => {
   try {
-    await client.connect();
-    await client.db("sead").command({ ping: 1 });
-    console.log(
-      "Pinged your deployment. You successfully connected to MongoDB!"
-    );
+    const collection = (await client.connect())
+      .db("Sead")
+      .collection("worker_types");
+    const cursor = await collection.find().toArray();
+    console.log(cursor);
   } catch (err) {
     console.log(err);
   } finally {
