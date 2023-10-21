@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import { ViewShiftsPage } from "Pages/ViewShifts/ViewShiftsPage";
+import ViewShiftsPage from "Pages/ViewShifts/ViewShiftsPage";
 
 const ViewShiftsRoute: FunctionComponent = () => {
   return <ViewShiftsPage />;
