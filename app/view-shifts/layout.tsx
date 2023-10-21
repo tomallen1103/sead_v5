@@ -1,7 +1,8 @@
 import { ReactNode } from "react";
+import { ViewShiftsLayout } from "Layouts/ViewShiftsLayout/ViewShiftsLayout";
 
-const ViewShiftsLayout = ({ children }: { children: ReactNode }) => {
+const ViewShiftsRouteLayout = ({ children }: { children: ReactNode }) => {
   return <ViewShiftsLayout>{children}</ViewShiftsLayout>;
 };
 
-export default ViewShiftsLayout;
+export default ViewShiftsRouteLayout;

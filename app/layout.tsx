@@ -28,7 +28,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
     <html lang="en">
       <body className={inter.className}>
         <Flowbite theme={{ theme: customTheme }}>
-          <SidebarContainer />
+          {/* <SidebarContainer /> */}
           {children}
         </Flowbite>
       </body>

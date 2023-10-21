@@ -1,3 +1,5 @@
+"use client";
+import { SidebarContainer } from "Components/Sidebar/SidebarContainer";
 import { FunctionComponent, ReactNode } from "react";
 
 export type ViewShiftsLayoutProps = {
@@ -7,5 +9,10 @@ export type ViewShiftsLayoutProps = {
 export const ViewShiftsLayout: FunctionComponent<ViewShiftsLayoutProps> = ({
   children,
 }: ViewShiftsLayoutProps) => {
-  return <div>hello{children}</div>;
+  return (
+    <div className="flex w-full">
+      <SidebarContainer />
+      {children}
+    </div>
+  );
 };
