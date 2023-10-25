@@ -4,9 +4,18 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ReactNode } from "react";
 import { CustomFlowbiteTheme, Flowbite, Sidebar } from "flowbite-react";
-import { SidebarContainer } from "Components/Sidebar/SidebarContainer";
+import {
+  useQuery,
+  useMutation,
+  useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from "react-query";
 
 const inter = Inter({ subsets: ["latin"] });
+
+// Create a client
+const queryClient = new QueryClient();
 
 // export const metadata: Metadata = {
 //   title: "Sead - Healthcare Staffing",
@@ -27,10 +36,9 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Flowbite theme={{ theme: customTheme }}>
-          {/* <SidebarContainer /> */}
-          {children}
-        </Flowbite>
+        <QueryClientProvider client={queryClient}>
+          <Flowbite theme={{ theme: customTheme }}>{children}</Flowbite>
+        </QueryClientProvider>
       </body>
     </html>
   );

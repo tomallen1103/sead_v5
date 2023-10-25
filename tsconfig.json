@@ -21,7 +21,8 @@
     "paths": {
       "Components/*": ["./components/*"],
       "Pages/*": ["./pages/*"],
-      "Layouts/*": ["./layouts/*"]
+      "Layouts/*": ["./layouts/*"],
+      "Models/*": ["./models/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
